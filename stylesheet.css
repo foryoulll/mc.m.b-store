@@ -1,0 +1,299 @@
+@import url(sanitize.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+body {
+    background-color: black;
+}
+
+.header-list ul {
+    margin-top: 20px;
+}
+
+.header-list li {
+    color: white;
+    list-style: none;
+    float: left;
+    margin: 20px 50px 0 0;
+    font-weight: lighter;
+}
+
+.header-list li:hover {
+    background-color: blue;
+}
+
+#nav-drawer {
+    display: none;
+    float: right;
+    margin: 30px;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+    display:none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  
+  /*ハンバーガーアイコンをCSSだけで表現*/
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #555;
+    display: block;
+    content: '';
+    cursor: pointer;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  /*閉じる用の薄黒カバー*/
+  #nav-close {
+    display: none;/*はじめは隠しておく*/
+    position: fixed;
+    z-index: 99;
+    top: 0;/*全体に広がるように*/
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: blue;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  /*中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;/*最前面に*/
+    width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+    max-width: 330px;/*最大幅（調整してください）*/
+    height: 100%;
+    background: black;/*背景色*/
+    transition: .3s ease-in-out;/*滑らかに表示*/
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);/*左に隠しておく*/
+    opacity: 0.7;
+
+  }
+  
+  /*チェックが入ったらもろもろ表示*/
+  #nav-input:checked ~ #nav-close {
+    display: block;/*カバーを表示*/
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);/*中身を表示（右へスライド）*/
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  #nav-content li {
+      color: white;
+      list-style: none;
+      margin: 20px;
+      font-weight: lighter;
+  }
+
+  #nav-content a {
+    text-decoration: none;
+  }
+
+  #nav-content li:hover {
+     background-color: blue;
+  }
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+    margin-top: 30px;
+    clear: left;
+    float: left;
+
+}
+
+
+main {
+    padding: 50px 0;
+    clear: left;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    font-family: 'Bangers', cursive;
+}
+
+.heading p {
+    margin-top: 10px;
+}
+
+.copy-container {
+    width: 600px;
+    margin: 0 auto;
+
+}
+
+.control {
+    text-align: center;
+}
+
+.type {
+    width: 80%;
+}
+
+.control .serch {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    background-color: white;
+    color: black;
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0,2);
+    border-bottom: solid 2px #118e9e;
+    border-radius: 4px;
+    font-weight: bold;
+    text-shadow: -1px -1px rgba(255,255,255,0.44), 1px 1px rgba(0,0,0,0.38);
+}
+
+.control .serch:active {
+    border-bottom: solid 2px #00BCD4;
+    box-shadow: none;
+    text-shadow: -1px -1px rgba(255, 255, 255, 0.3), 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.control p {
+    font-size: 15px;
+}
+
+.main-img {
+    text-align: center;
+}
+
+.category {
+    margin: 0 auto;
+}
+
+.category h1 {
+    text-align: center;
+}
+
+.category ul {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.category li {
+    float: left;
+    margin: 1px;
+    width: 120px;
+    height: 100px;
+    color: white;
+    background-color: red;
+    list-style: none;
+}
+
+.category a {
+    color: white;
+}
+
+.category p {
+    text-align: center;
+    margin: 0;
+    padding: auto;
+}
+
+section {
+    clear: left;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.hyou01 {
+    display: block;
+    width: 600px;
+    margin: 0 auto;
+}
+
+section a {
+    font-size: 50px;
+}
+
+section br {
+    text-align: center;
+}
+
+.hyou01 td {
+    text-align: center;
+    height: 180px;
+}
+
+
+td p {
+    text-align: center;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+.hyou02 {
+    display: none;
+    padding-left: 25px;
+}
+
+
+@media only screen and (max-width:600px) {
+    .header-list {
+        display: none;
+    }
+    #nav-drawer {
+        display: block;
+    }
+
+    .copy-container {
+        width: 450px;
+        margin-top: 30px;
+    }
+
+    .copy-container img {
+        max-width: 450px;
+    }
+
+    .heading h1 {
+        margin: 0;
+        text-align: center;
+    }
+
+    .hyou01 {
+        display: none;
+    }
+
+    .hyou02 {
+        display: block;
+    }
+     
+}
+
+
