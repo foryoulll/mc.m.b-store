@@ -272,15 +272,11 @@ td p {
 
     .copy-container {
         width: 100%;
-        margin: 30px auto 0 auto;
+        margin: 35px auto 0 auto;
     }
 
     .copy-container img {
         max-width: 450px;
-    }
-
-    .heading h1 {
-        padding: 0 auto;
     }
 
     .hyou01 {
@@ -298,3 +294,4 @@ td p {
         
      
 }
+
