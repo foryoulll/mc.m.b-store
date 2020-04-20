@@ -23,9 +23,7 @@ body {
 }
 
 #nav-drawer {
-    margin-right: 30px;
-    margin-top: 30px;
-    background-color: white;
+    margin: 30px;
     display: none;
     float: right;
 }
