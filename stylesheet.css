@@ -23,9 +23,11 @@ body {
 }
 
 #nav-drawer {
+    margin-right: 30px;
+    margin-top: 30px;
+    background-color: white;
     display: none;
     float: right;
-    margin: 30px;
 }
 
 /*チェックボックス等は非表示に*/
@@ -153,7 +155,6 @@ main {
 .copy-container {
     width: 600px;
     margin: 0 auto;
-
 }
 
 .control {
@@ -225,6 +226,7 @@ main {
 }
 
 section {
+    padding: 0 10px 0 10px;
     clear: left;
     margin: 0 auto;
     padding-top: 20px;
@@ -232,7 +234,6 @@ section {
 
 .hyou01 {
     display: block;
-    width: 600px;
     margin: 0 auto;
 }
 
@@ -240,13 +241,13 @@ section a {
     font-size: 50px;
 }
 
-section br {
-    text-align: center;
+table {
+    width: 100%;
 }
 
+
 .hyou01 td {
-    text-align: center;
-    height: 180px;
+    width: 30%
 }
 
 
@@ -260,7 +261,6 @@ td p {
 
 .hyou02 {
     display: none;
-    padding-left: 25px;
 }
 
 
@@ -273,8 +273,8 @@ td p {
     }
 
     .copy-container {
-        width: 450px;
-        margin-top: 30px;
+        width: 100%;
+        margin: 30px auto 0 auto;
     }
 
     .copy-container img {
@@ -282,8 +282,7 @@ td p {
     }
 
     .heading h1 {
-        margin: 0;
-        text-align: center;
+        padding: 0 auto;
     }
 
     .hyou01 {
@@ -291,9 +290,13 @@ td p {
     }
 
     .hyou02 {
+        padding: 0 30px 0 30px;
         display: block;
     }
+
+    .hyou02 td {
+        width: 50%;
+    }
+        
      
 }
-
-
