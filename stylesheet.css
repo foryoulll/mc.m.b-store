@@ -283,15 +283,17 @@ td p {
         display: none;
     }
 
-    .hyou02 {
-        padding: 0 auto 0 auto;
+       .hyou02 {
         display: block;
     }
 
-    .hyou02 td {
-        width: 50%;
+    table {
+        margin: 0 auto;
     }
-        
-     
+
+    td {
+        text-align: center;
+    }
 }
+
 
